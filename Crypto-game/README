@@ -1,0 +1,58 @@
+Copyright Sebastian Samoilescu 2019
+
+|--------------------------------|
+|   Nume:  Sebastian Samoilescu  |
+|   Grupa: 325CA                 |
+|--------------------------------|
+
+Task1
+
+---> Pentru fiecarea cheie se parcurge matricea descrisa de imagine
+
+---> Pentru fiecare linie se salveaza adresa de inceput
+
+---> La intalnirea caracterului '\0' se trimite adresa de inceput a stringu - lui 
+     catre functia verify_message ce verifica daca mesajul contine cuvantul "revient"
+
+Task2
+
+---> se cripteaza toata matricea cu cheia gasita
+
+---> se salveaza mesajul ce va fi introdus in matrice pe stiva, si va fi copiat la pozitia data
+     in matrice
+
+---> se cripteaza matricea cu noua cheie
+
+Task3
+
+---> pun pe stiva secventele de . si - corespunzatoare literelor si cifrelor
+
+---> pentru fiecare inceput de secvente retin o adresa de memorie
+    (una pentru secventa corespunzatoare literelor si una pentru cifre)
+
+---> pentru a accesa secventa corespunzatoare unei litere sau cifre iau drept referinta litera A, respectiv cifra 0
+
+---> dupa ce convertesc un mesajul in cod morse, il introduc in matrice cu functia definita anterior
+
+Task4
+
+---> convertesc fiecare litera din mesaj in reprezentarea sa pe biti(retin bitii intr -un string)
+
+---> de la pozitia data din imagine incep sa aplic operatii pe biti pentru a seta un bit zero sau 1
+
+Task5
+
+---> de la pozitia indicata iau ultimul bit din reprezentarea byte-ului cel mai putin semnificativ
+     pana formez o secventa de 8 biti(un octet)
+
+---> convertesc acest array de biti intr-un numar decimal, litera corespunzatoare
+
+---> repet procesul pana cand intalnesc decimalul 0
+
+Task6
+
+---> parcurg fiecare pixel din interiorul matricei si salvez rezultaul mediei
+    veciinilor intr- o alta zona de memorie
+---> pixelii ce nu fac parte din interiorul matricei vor fi doar copiati
+
+---> in final copiez in matricea initiala noile elemente
