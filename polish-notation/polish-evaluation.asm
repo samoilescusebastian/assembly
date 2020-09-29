@@ -1,5 +1,5 @@
-;%include "includes/io.inc"
-%include "io.inc"
+%include "includes/io.inc"
+; %include "io.inc"
 extern getAST
 extern freeAST
 

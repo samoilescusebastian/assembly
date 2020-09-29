@@ -1,13 +1,13 @@
 CFLAGS=-m32
 AFLAGS=-f elf
 
-build: tema1
+build: polish-evaluation
 
-tema1: tema1.o includes/ASTUtils.o includes/macro.o
+polish-evaluation: polish-evaluation.o includes/ASTUtils.o includes/macro.o
 	gcc $^ -o $@ $(CFLAGS)
 
-tema1.o: tema1.asm
+polish-evaluation.o: polish-evaluation.asm
 	nasm $^ -o $@ $(AFLAGS)
 
 clean:
-	rm -rf tema1.o tema1
+	rm -rf polish-evaluation.o polish-evaluation
