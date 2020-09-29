@@ -1,0 +1,29 @@
+Copyright Sebastian Samoilescu 2019
+
+|--------------------------------|
+|   Nume:  Sebastian Samoilescu  |
+|   Grupa: 325CA                 |
+|--------------------------------|
+
+Logica problemei
+-----------------
+
+--> Pentru a evalua expresia din arbore, este necesara o parcurgere inordine.
+
+--> Observam ca frunzele arborelui sunt numere, iar restul nodurilor operanzi.
+
+--> Cand atingem un nod de tip operand, operatia aritmetica va fi efectuata pe subarborele stang
+    si subarborele drept. Cand un nod de tip frunza va fi atins acesta va fi returnat.
+
+Implementare
+-------------
+
+---> Pentru a parcurgere arborele am definit functia continue_traversal care functioneaza
+     dupa principiul descris mai sus.
+     
+     Pentru a transmite cat si a returna parametri, am folosit stiva (inainte de apelul unei functii
+     pun pe stiva atat variabila transmisa cat si cea returnata ce va fi ulterior modificata).
+
+
+---> Deoarece informatia din nod este tinuta sub forma de string, am realizat o functie(convert)
+     ce converteste un string intr-un numar cu semn pe 4 octeti.
